@@ -33,7 +33,7 @@ b. 以 <font color="#dd0000">ReLU function</font> 為隱藏層的活化函數
 
 (i) 使用 <font color="#dd0000">He 權重初始值</font>:
 
-假設上層節點有 n 個，使用具有 $ \sqrt{\frac{2}{n}} $ 標準差的常態分佈來初始化
+假設上層節點有 n 個，使用具有 <img src="http://chart.googleapis.com/chart?cht=tx&chl= \sqrt{\frac{2}{n}}" style="border:none;"> 標準差的常態分佈來初始化
 
 **(2) 強制性調整各層活性化分佈廣度的方法: <font color="#dd0000">Batch Normalization (Batch Norm)</font>**
 
@@ -46,26 +46,26 @@ b. <font color="#dd0000">Batch Normalization (Batch Norm) </font>演算法: (正
 
 意義: 
  
-    進行學習時，以小批次為單位，按照各個小批次進行資料分佈平均為 0、分散為 1 的正規化處理
+   進行學習時，以小批次為單位，按照各個小批次進行資料分佈平均為 0、分散為 1 的正規化處理
 
 正規化(Normalization)算式:
+<img src="http://chart.googleapis.com/chart?cht= \mu _{B} \leftarrow \frac{1}{m}\sum_{i=1}^{m}x_{i}" style="border:none;">
 
-$$\mu _{B} \leftarrow \frac{1}{m}\sum_{i=1}^{m}x_{i}$$
-$$\sigma  _{B}^{2} \leftarrow \frac{1}{m}\sum_{i=1}^{m}\left ( x_{i}-\mu _{B} \right )^{2}$$
+<img src="http://chart.googleapis.com/chart?cht= \sigma  _{B}^{2} \leftarrow \frac{1}{m}\sum_{i=1}^{m}\left ( x_{i}-\mu _{B} \right )^{2}" style="border:none;">
 
-$$\hat{x}_{i} \leftarrow \frac{x_{i}-\mu _{B}}{\sqrt{\sigma_{B}^{2}+\varepsilon }}$$
+<img src="http://chart.googleapis.com/chart?cht= \leftarrow \frac{x_{i}-\mu _{B}}{\sqrt{\sigma_{B}^{2}+\varepsilon }}" style="border:none;">
 
-輸入資料為 m 個小批次的資料 B = {$x_{1}, x_{2}, ..., x_{m}$}，透過正規化(Normalization)轉換成平均為 0、分散為 1 的資料 {$\hat{x}_{1}, \hat{x}_{2}, ..., \hat{x}_{m}$}。$\varepsilon$為微小數值(Ex: 10e-7)，以避免除以零的情況。
+輸入資料為 m 個小批次的資料 B = {<img src="http://chart.googleapis.com/chart?cht= x_{1}, x_{2}, ..., x_{m}" style="border:none;">}，透過正規化(Normalization)轉換成平均為 0、分散為 1 的資料 {<img src="http://chart.googleapis.com/chart?cht= \hat{x}_{1}, \hat{x}_{2}, ..., \hat{x}_{m}" style="border:none;">}。<img src="http://chart.googleapis.com/chart?cht= \varepsilon" style="border:none;">為微小數值(Ex: 10e-7)，以避免除以零的情況。
 
 正規化(Normalization)後的資料，再以原有的規模和移動進行轉換:
 
-$$ y_{i}\leftarrow \gamma \hat{x}_{i}+\beta $$
+<img src="http://chart.googleapis.com/chart?cht= y_{i}\leftarrow \gamma \hat{x}_{i}+\beta" style="border:none;">
 
-參數 $\gamma$ 和 $\beta$ 由 $\gamma=1、\beta=0$ 開始進行調整至適當值。
+參數 <img src="http://chart.googleapis.com/chart?cht= \gamma" style="border:none;"> 和 <img src="http://chart.googleapis.com/chart?cht= \beta" style="border:none;"> 由 <img src="http://chart.googleapis.com/chart?cht= \gamma=1、\beta=0" style="border:none;"> 開始進行調整至適當值。
 
 c. <font color="#dd0000">Batch Normalization (Batch Norm) </font>層:
 
-    可以在神經網路中插入此層(在活化函數之前或之後)來減少資料分佈的誤差
+   可以在神經網路中插入此層(在活化函數之前或之後)來減少資料分佈的誤差
 
 **3.超參數(Hyper-parameter)的設定: 人工設定的參數，它必須以各種數值進行測試，找出可以順利學習的結果**
  - 各層神經元數量(Input size、Hidden size、Output size)
@@ -108,13 +108,13 @@ b. 執行超參數最佳化
 a. 種類:
 - L2 norm: 對應各個權重的平方和
 - L1 norm: 對應各個權重的絕對值和
-- L$\infty$ norm (Max norm): 各個權重中，最大的絕對值
+- L<img src="http://chart.googleapis.com/chart?cht= \infty" style="border:none;"> norm (Max norm): 各個權重中，最大的絕對值
 
 b. 處理方式: (以 L2 norm 為例)
 
-- 針對全部的權重，把 $\frac{1}{2}\lambda \mathbf{W}^{2}$ 加入損失函數中，在計算梯度時將誤差反向傳播法的結果與 L2 norm 正規化的微分($\lambda\mathbf{W}$)相加
+- 針對全部的權重，把 <img src="http://chart.googleapis.com/chart?cht= \frac{1}{2}\lambda \mathbf{W}^{2}" style="border:none;"> 加入損失函數中，在計算梯度時將誤差反向傳播法的結果與 L2 norm 正規化的微分(<img src="http://chart.googleapis.com/chart?cht= \lambda\mathbf{W}" style="border:none;">)相加
 
-     ( $\mathbf{W}=\left \{w_{1}, w_{2}, ...,w_{n}\right \}$, $\lambda$: 控制正規化強度的超參數 )
+     ( <img src="http://chart.googleapis.com/chart?cht= \mathbf{W}=\left \{w_{1}, w_{2}, ...,w_{n}\right \}" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht= \lambda" style="border:none;">: 控制正規化強度的超參數 )
 
 (2) Dropout
 
