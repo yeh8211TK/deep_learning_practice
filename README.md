@@ -26,7 +26,7 @@ a. 以 <font color="#dd0000">Sigmoid function</font> 為隱藏層的活化函數
 
 (i) 使用 <font color="#dd0000">Xavier 權重初始值</font>: (可以用 <font color="#dd0000">tanh</font> 取代 <font color="#dd0000">sigmoid</font> 進行改良)
 
-假設上層節點有 n 個，使用具有 <img src="http://chart.googleapis.com/chart?cht=tx&chl= $ \frac{1}{\sqrt{n}} $" style="border:none;">
+假設上層節點有 n 個，使用具有 <img src="http://chart.googleapis.com/chart?cht=tx&chl= \frac{1}{\sqrt{n}}" style="border:none;">
  標準差的常態分佈來初始化
     
 b. 以 <font color="#dd0000">ReLU function</font> 為隱藏層的活化函數
@@ -103,7 +103,7 @@ b. 執行超參數最佳化
    
 (1) 權重遞減(Weight decay)
 
-    針對學習過程中有較大的權重部分，給與懲罰，藉此控制過度學習。
+   針對學習過程中有較大的權重部分，給與懲罰，藉此控制過度學習。
 
 a. 種類:
 - L2 norm: 對應各個權重的平方和
@@ -120,6 +120,6 @@ b. 處理方式: (以 L2 norm 為例)
 
 a. 處理方式:
 
-    神經網路訓練時，隨機選出隱藏層的神經元給予刪除，刪除後的神經元無法進行訊號傳遞。測試時，會傳遞全部神經元的訊號，但各個神經元的輸出必須乘上訓練時刪除神經元的比例再傳遞。
+   神經網路訓練時，隨機選出隱藏層的神經元給予刪除，刪除後的神經元無法進行訊號傳遞。測試時，會傳遞全部神經元的訊號，但各個神經元的輸出必須乘上訓練時刪除神經元的比例再傳遞。
 
 **2.Batch Normalization**
