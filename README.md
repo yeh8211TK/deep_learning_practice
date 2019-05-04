@@ -1,4 +1,4 @@
-本地作為自學深度學習的歷程記錄。
+本地作為自學深度學習的歷程記錄。\n
 This repository is a place for my deep learning practices.
 
 建置中...
