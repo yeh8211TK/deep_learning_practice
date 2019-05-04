@@ -26,7 +26,8 @@ a. 以 <font color="#dd0000">Sigmoid function</font> 為隱藏層的活化函數
 
 (i) 使用 <font color="#dd0000">Xavier 權重初始值</font>: (可以用 <font color="#dd0000">tanh</font> 取代 <font color="#dd0000">sigmoid</font> 進行改良)
 
-假設上層節點有 n 個，使用具有 $ \frac{1}{\sqrt{n}} $ 標準差的常態分佈來初始化
+假設上層節點有 n 個，使用具有 <img src="http://chart.googleapis.com/chart?cht=tx&chl= $ \frac{1}{\sqrt{n}} $" style="border:none;">
+ 標準差的常態分佈來初始化
     
 b. 以 <font color="#dd0000">ReLU function</font> 為隱藏層的活化函數
 
