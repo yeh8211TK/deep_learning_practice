@@ -114,7 +114,7 @@ b. 處理方式: (以 L2 norm 為例)
 
 - 針對全部的權重，把 <img src="http://chart.googleapis.com/chart?cht= \frac{1}{2}\lambda \mathbf{W}^{2}" style="border:none;"> 加入損失函數中，在計算梯度時將誤差反向傳播法的結果與 L2 norm 正規化的微分(<img src="http://chart.googleapis.com/chart?cht= \lambda\mathbf{W}" style="border:none;">)相加
 
-     ( <img src="http://chart.googleapis.com/chart?cht= \mathbf{W}=\left \{w_{1}, w_{2}, ...,w_{n}\right \}" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht= \lambda" style="border:none;">: 控制正規化強度的超參數 )
+     ( <img src="http://chart.googleapis.com/chart?cht= \mathbf{W}=\left \{w_{1}, w_{2}, ...,w_{n}\right \}" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht= $\lambda$" style="border:none;">: 控制正規化強度的超參數 )
 
 (2) Dropout
 
