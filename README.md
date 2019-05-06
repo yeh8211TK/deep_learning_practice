@@ -18,3 +18,8 @@ This repository is a place for my deep learning practices.
 ### Part 3
 - 自然語言處理(natural language processing, NLP) (傳統方法: 詞庫手法、技術手法，類神經網路方法: 推論手法(word2vec、CBOW 模型) )
 - 自然語言處理(natural language processing, NLP) (遞迴神經網路(RNN)、長短期記憶(LSTM)模型、seq2seq、Attention)
+
+### 參考書目
+- <Deep Learning：用 Python 進行深度學習的基礎理論實作> (2017)
+- <Deep Learning 2: 用 Python 進行自然語言處理的基礎理論實作> (2019)
+- <TensorFlow + Keras 深度學習人工智慧實務應用> (2017)
