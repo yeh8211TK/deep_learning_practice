@@ -11,7 +11,7 @@ This repository is a place for my deep learning practices.
 - 影響類神經網路學習的因素
 - 捲積神經網路 (convolutional neural network, CNN)
 - 深度學習應用整理
-     -deep_learning_applications.ipy
+     -- deep_learning_applications.ipynb
 
 ### Part 2
 - 使用 Keras 進行深度學習 (MLP 影像辨識、CNN 影像辨識)
