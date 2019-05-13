@@ -10,9 +10,12 @@ This repository is a place for my deep learning practices.
 - 類神經網路的誤差反向傳播法 (計算圖、加法層、乘法層、ReLU 層、Sigmoid 層、Affine 層、Softmax-with-loss 層、神經網路的學習)
 - 影響類神經網路學習的因素
 - 捲積神經網路 (convolutional neural network, CNN)
+- 深度學習應用整理
+     - vv
 
 ### Part 2
 - 使用 Keras 進行深度學習 (MLP 影像辨識、CNN 影像辨識)
+- TensorFlow 的執行模式與神經網路的張量運算
 - 使用 Tensorflow 進行深度學習 (MLP 影像辨識、CNN 影像辨識)
 
 ### Part 3
