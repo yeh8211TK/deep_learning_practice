@@ -29,21 +29,25 @@ Under construction...
   -- deep_learning_applications.ipynb
 
 ### Part 2
-- 使用 Keras 進行深度學習 (MLP 影像辨識、CNN 影像辨識)
+- 使用 Keras 執行 MLP、CNN 影像辨識
 
   -- deep_learning_keras.ipynb
 
-- TensorFlow 執行的模式與類神經網路的張量運算
+- TensorFlow 的執行模式與類神經網路的張量運算
 
   -- deep_learning_tensorflow_1.ipynb
 
-- 使用 Tensorflow 進行深度學習 (MLP 影像辨識、CNN 影像辨識)
+- 使用 Tensorflow 執行 MLP、CNN 影像辨識
 
   -- deep_learning_tensorflow_2.ipynb
 
 ### Part 3
 - 自然語言處理(natural language processing, NLP) (傳統方法: 詞庫手法、技術手法，類神經網路方法: 推論手法(word2vec、CBOW 模型) )
 - 自然語言處理(natural language processing, NLP) (遞迴神經網路(RNN)、長短期記憶(LSTM)模型、seq2seq、Attention)
+
+### Part 4
+- 使用 Keras 執行 RNN、LSTM
+- 使用 Tensorflow 執行 RNN、LSTM
 
 ### 參考書目
 - <Deep Learning：用 Python 進行深度學習的基礎理論實作> (2017)
