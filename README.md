@@ -32,7 +32,12 @@ This repository is a place for my deep learning practices.
   -- deep_learning_keras.ipynb
 
 - TensorFlow 執行的模式與類神經網路的張量運算
+
+  -- deep_learning_tensorflow_1.ipynb
+
 - 使用 Tensorflow 進行深度學習 (MLP 影像辨識、CNN 影像辨識)
+
+  -- deep_learning_tensorflow_2.ipynb
 
 ### Part 3
 - 自然語言處理(natural language processing, NLP) (傳統方法: 詞庫手法、技術手法，類神經網路方法: 推論手法(word2vec、CBOW 模型) )
