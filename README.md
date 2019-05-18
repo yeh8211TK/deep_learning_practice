@@ -4,6 +4,8 @@ This repository is a place for my deep learning practices.
 
 建置中...
 
+Under construction...
+
 ## 目錄
 ### Part 1
 - 感知器與類神經網路 (感知器、活化函數、神經網路的推論、參數最佳化、神經網路的學習) 
