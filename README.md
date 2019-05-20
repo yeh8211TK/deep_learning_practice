@@ -41,7 +41,7 @@ Under construction...
 
   -- [deep_learning_tensorflow_2.ipynb](https://github.com/yeh8211TK/deep_learning_practice/blob/master/deep_learning_tensorflow_2.ipynb)
   
--  CPU 與 GPU 執行 TensorFlow 的效率測試
+- CPU 與 GPU 執行 TensorFlow 的效率測試
 
   -- [deep_learning_GPU.ipynb](https://github.com/yeh8211TK/deep_learning_practice/blob/master/deep_learning_GPU.ipynb)
 
