@@ -41,7 +41,9 @@ Under construction...
 
   -- [deep_learning_tensorflow_2.ipynb](https://github.com/yeh8211TK/deep_learning_practice/blob/master/deep_learning_tensorflow_2.ipynb)
   
-- 以 GPU 執行 Keras/Tensorflow (MLP、CNN 影像辨識)
+-  CPU 與 GPU 執行 TensorFlow 的效率測試
+
+  -- [deep_learning_GPU.ipynb](https://github.com/yeh8211TK/deep_learning_practice/blob/master/deep_learning_GPU.ipynb)
 
 ### Part 3
 - 自然語言處理(natural language processing, NLP) (傳統方法: 詞庫手法、技術手法，類神經網路方法: 推論手法(word2vec、CBOW 模型) )
