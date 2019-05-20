@@ -6,11 +6,15 @@ This repository is a place for my deep learning practices.
 
 Under construction...
 
+[註] 在 Github 順利查看 .ipynb 檔的方式: 先在電腦裝置端啟動 jupyter notebook
+
 ## 目錄
 ### Part 1
 - 感知器與類神經網路 (感知器、活化函數、神經網路的推論、參數最佳化、神經網路的學習) 
 
   -- [deep_learning_neural_network.ipynb](https://github.com/yeh8211TK/deep_learning_practice/blob/master/deep_learning_neural_network.ipynb)
+
+  -- 四種最佳化方法(SGD、Momentum、AdaGrad、Adam)的動畫顯示: ani.mp4
 
 - 類神經網路的誤差反向傳播法 (計算圖、加法層、乘法層、ReLU 層、Sigmoid 層、Affine 層、Softmax-with-loss 層、神經網路的學習)
 
