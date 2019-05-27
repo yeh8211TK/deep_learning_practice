@@ -51,20 +51,33 @@ Under construction...
 
 ### Part 3
 - 遞迴神經網路(RNN、Time RNN)、長短期記憶(LSTM、Time LSTM) 模型、GRU (Gated Recurrent Units) 模型
+
+  -- [deep_learning_RNN.ipynb]
+
 - 自然語言處理(natural language processing, NLP)-1 (傳統方法: 詞庫手法、技術手法，類神經網路方法: 推論手法(word2vec、CBOW 模型) )
+
+
+
 - 自然語言處理(natural language processing, NLP)-2 (RNNLM、seq2seq、Attention)
+
+
 
 ### Part 4
 - 使用 Keras 執行 RNN、LSTM
 - 使用 Tensorflow 執行 RNN、LSTM
 
 ### Part 5
-- Autoencoder 應用 (1): 使用 Denoising Autoencoder (DAE) 對影像去噪(denoise)
+- Autoencoder 應用 (1): 使用 Keras 與 Denoising Autoencoder (DAE) 模型對影像資料降噪(Denoise)
 
- -- [deep_learning_denoising_AE.ipynb](https://github.com/yeh8211TK/deep_learning_practice/blob/master/deep_learning_denoising_AE.ipynb)
+  -- [deep_learning_denoising_AE.ipynb](https://github.com/yeh8211TK/deep_learning_practice/blob/master/deep_learning_denoising_AE.ipynb)
 
 - Autoencoder 應用 (2): 異常偵測(Anomaly Detection)
+
+
+
 - Autoencoder 應用 (3): LSTM Autoencoder 處理時間序列資料
+
+
 
 ### 參考書目
 - <Deep Learning：用 Python 進行深度學習的基礎理論實作> (2017)
