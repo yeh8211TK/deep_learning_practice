@@ -59,8 +59,10 @@ Under construction...
 - 使用 Tensorflow 執行 RNN、LSTM
 
 ### Part 5
-- Autoencoder
-- Autoencoder 應用 (1): 使用 Denoising Autoencoder (AE) 對影像去噪(denoise)
+- Autoencoder 應用 (1): 使用 Denoising Autoencoder (DAE) 對影像去噪(denoise)
+
+ -- [deep_learning_denoising_AE.ipynb](https://github.com/yeh8211TK/deep_learning_practice/blob/master/deep_learning_denoising_AE.ipynb)
+
 - Autoencoder 應用 (2): 異常偵測(Anomaly Detection)
 - Autoencoder 應用 (3): LSTM Autoencoder 處理時間序列資料
 
