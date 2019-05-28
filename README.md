@@ -6,7 +6,7 @@ This repository is a place for my deep learning practices.
 
 Under construction...
 
-[註] 在 Github 順利查看 .ipynb 檔的方式: 先在電腦裝置端啟動 jupyter notebook
+[註] 在 Github 順利查看 .ipynb 檔的方式: 在 https://nbviewer.jupyter.org/ 輸入檔案網址
 
 ## 目錄
 ### Part 1
@@ -71,9 +71,9 @@ Under construction...
 
   -- [deep_learning_denoising_AE.ipynb](https://github.com/yeh8211TK/deep_learning_practice/blob/master/deep_learning_denoising_AE.ipynb)
 
-- Autoencoder 應用 (2): 異常偵測(Anomaly Detection)
+- Autoencoder 應用 (2): 工業數據的異常偵測(Anomaly Detection)
 
-
+  -- [](https://github.com/yeh8211TK/deep_learning_practice/blob/master/Autoencoder_for_extreme_rare-event_classification.ipynb)
 
 - Autoencoder 應用 (3): LSTM Autoencoder 處理時間序列資料
 
