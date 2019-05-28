@@ -73,7 +73,7 @@ Under construction...
 
 - Autoencoder 應用 (2): 工業數據的異常偵測(Anomaly Detection)
 
-  -- [](https://github.com/yeh8211TK/deep_learning_practice/blob/master/Autoencoder_for_extreme_rare-event_classification.ipynb)
+  -- [Autoencoder_for_extreme_rare-event_classification.ipynb](https://github.com/yeh8211TK/deep_learning_practice/blob/master/Autoencoder_for_extreme_rare-event_classification.ipynb)
 
 - Autoencoder 應用 (3): LSTM Autoencoder 處理時間序列資料
 
