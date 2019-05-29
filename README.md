@@ -52,19 +52,20 @@ Under construction...
 ### Part 3
 - 遞迴神經網路(RNN、Time RNN)、長短期記憶(LSTM、Time LSTM) 模型、GRU (Gated Recurrent Units) 模型
 
-  -- [deep_learning_RNN.ipynb]
+  -- [deep_learning_RNN.ipynb] (To do list)
 
-- 自然語言處理(natural language processing, NLP)-1 (傳統方法: 詞庫手法、技術手法，類神經網路方法: 推論手法(word2vec、CBOW 模型) )
+- 自然語言處理(natural language processing, NLP)-1
 
+  -- 傳統方法: 詞庫手法、計數手法; 類神經網路方法: 推論手法(word2vec、CBOW 模型) (To do list)
 
+- 自然語言處理(natural language processing, NLP)-2
 
-- 自然語言處理(natural language processing, NLP)-2 (RNNLM、seq2seq、Attention)
-
-
+  -- RNNLM、LSTMLM、seq2seq、Attention mechanism (To do list)
 
 ### Part 4
-- 使用 Keras 執行 RNN、LSTM
-- 使用 Tensorflow 執行 RNN、LSTM
+- 使用 Keras 執行 RNN、LSTM (To do list)
+
+- 使用 Tensorflow 執行 RNN、LSTM (To do list)
 
 ### Part 5
 - Autoencoder 應用 (1): 使用 Keras 與 Denoising Autoencoder (DAE) 模型對影像資料降噪(Denoise)
@@ -75,7 +76,8 @@ Under construction...
 
   -- [Autoencoder_for_extreme_rare-event_classification.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/Autoencoder_for_extreme_rare-event_classification.ipynb)
 
-- Autoencoder 應用 (3): LSTM Autoencoder 處理時間序列資料
+- Autoencoder 應用 (3): LSTM Autoencoder 處理時間序列資料 (To do list)
+
 
 
 
