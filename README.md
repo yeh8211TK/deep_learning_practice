@@ -63,7 +63,11 @@ Under construction...
   -- RNNLM、LSTMLM、seq2seq、Attention mechanism (To do list)
 
 ### Part 4 基礎篇(四): 深度學習框架處理時間序列的問題
-- 使用 Keras 執行 RNN、LSTM (To do list)
+- 使用 Keras 執行 RNN、LSTM
+
+  -- [deep_learning_Keras_RNN.ipynb] (To do list)
+
+  -- [deep_learning_Keras_LSTM.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/deep_learning_Keras_LSTM.ipynb)
 
 - 使用 Tensorflow 執行 RNN、LSTM (To do list)
 
