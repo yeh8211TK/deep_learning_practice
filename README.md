@@ -50,9 +50,9 @@ Under construction...
   -- [deep_learning_GPU.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/deep_learning_GPU.ipynb)
 
 ### Part 3 基礎篇(三): 時間序列資料處理
-- 遞迴神經網路(RNN、Time RNN)、長短期記憶(LSTM、Time LSTM) 模型、GRU (Gated Recurrent Units) 模型
+- 遞歸神經網路(RNN、Time RNN)、長短期記憶(LSTM、Time LSTM) 模型、GRU (Gated Recurrent Units) 模型
 
-  -- [deep_learning_RNN.ipynb] (To do list)
+  -- [deep_learning_RNN&LSTM.ipynb] (To be continued...)
 
 - 自然語言處理(natural language processing, NLP)-1
 
@@ -80,10 +80,9 @@ Under construction...
 
   -- [Autoencoder_for_extreme_rare-event_classification.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/Autoencoder_for_extreme_rare-event_classification.ipynb)
 
-- Autoencoder 應用 (3): LSTM Autoencoder 處理時間序列資料 (To do list)
+- Autoencoder 應用 (3): LSTM Autoencoder 處理時間序列資料
 
-
-
+  -- [LSTM_Autoencoder.ipynb](To do list)
 
 ### 參考書目
 - <Deep Learning：用 Python 進行深度學習的基礎理論實作> (2017)
