@@ -82,7 +82,7 @@ Under construction...
 
 - Autoencoder 應用 (3): LSTM Autoencoder 處理時間序列資料
 
-  -- [LSTM_Autoencoder.ipynb](To do list)
+  -- [LSTM_Autoencoder.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/LSTM_Autoencoder.ipynb)
 
 ### 參考書目
 - <Deep Learning：用 Python 進行深度學習的基礎理論實作> (2017)
