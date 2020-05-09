@@ -49,7 +49,7 @@ Under construction...
 
   -- [deep_learning_GPU.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/deep_learning_GPU.ipynb)
 
-### Part 3: 時間序列資料處理
+### Part 3: 自然語言處理與時間序列資料
 - 遞歸神經網路(RNN、Time RNN)、長短期記憶(LSTM、Time LSTM) 模型、GRU (Gated Recurrent Units) 模型
 
   -- [deep_learning_RNN&LSTM.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/deep_learning_RNN%26LSTM.ipynb) (To be continued...)
