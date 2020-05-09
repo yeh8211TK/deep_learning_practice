@@ -54,7 +54,7 @@ Under construction...
 
   -- [deep_learning_RNN&LSTM.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/deep_learning_RNN%26LSTM.ipynb) (To be continued...)
 
-- [自然語言處理(natural language processing, NLP)-1]()
+- [自然語言處理(natural language processing, NLP)-1](https://github.com/yeh8211TK/deep_learning_practice/tree/master/NLP)
 
 - 自然語言處理(natural language processing, NLP)-2
 
