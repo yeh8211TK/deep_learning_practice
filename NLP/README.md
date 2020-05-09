@@ -32,7 +32,24 @@
      
   - 使用餘弦相似度(cosine similarity)表示字詞向量之間的相似度
    
-  - 顯示相似詞的排名
+  - 建立用來顯示相似詞排名的函數
 
 - 計數方法的改進
+
+  - 點間互資訊(Pointwise Mutual Information, PMI)
+  
+  - 共生矩陣(co-occurence matrix)轉換成正向點間互資訊(Positive PMI, PPMI)矩陣 [稀疏矩陣(sparse matrix)->稠密矩陣(dense matrix)]
+  
+  - 使用奇異值分解(Truncated SVD) 對 PPMI 矩陣進行降維(dimensionality reduction)
+  
+  - 以稠密向量(dense vector)顯示字詞的分散式表示
       
+#### 推論方法
+
+- Continuous Bag-Of-Words (CBOW) 模型 (簡化型 word2vec)
+
+- skip-gram 模型
+
+- word2vec 模型
+
+  - 簡化型 word2vec 導入新的 Embedding 層和損失函數 Negative Sampling
