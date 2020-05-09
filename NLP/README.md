@@ -14,12 +14,16 @@
   
 #### 計數方法
   
-  - 語料庫(curpus): Penn Treebank (PTB) 資料集
+  - 語料庫(corpus): Penn Treebank (PTB) 資料集
   
   - 處理流程
   
-   - 文本資料預處理
+   1. 文本資料預處理
    
      - [ ] 分割字詞
+     
+     - [ ] 建立字詞 ID 清單(corpus)、字詞轉換字詞 ID 的字典(word_to_id)和字詞 ID 轉換字詞的字典(id_to_word)
+     
+   2. 字詞分散式表示 
 
 
