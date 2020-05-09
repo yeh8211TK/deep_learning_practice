@@ -54,9 +54,7 @@ Under construction...
 
   -- [deep_learning_RNN&LSTM.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/deep_learning_RNN%26LSTM.ipynb) (To be continued...)
 
-- 自然語言處理(natural language processing, NLP)-1
-
-  -- 傳統方法: 詞庫手法、計數手法; 類神經網路方法: 推論手法(word2vec、CBOW 模型) (To do list)
+- [自然語言處理(natural language processing, NLP)-1]()
 
 - 自然語言處理(natural language processing, NLP)-2
 
