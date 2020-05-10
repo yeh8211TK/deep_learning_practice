@@ -64,7 +64,8 @@
   
     - 從機率觀點描述 CBOW 模型與 skip-gram 模型 (window size = 1)
     
-      - [ ] CBOW 模型: $P(\omega_{t})$
+      - [ ] CBOW 模型: $P(\omega_{t})$<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+
       
       - [ ] skip-gram 模型
   
