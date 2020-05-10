@@ -43,12 +43,38 @@
   - 使用奇異值分解(Truncated SVD) 對 PPMI 矩陣進行降維(dimensionality reduction)
   
   - 以稠密向量(dense vector)顯示字詞的分散式表示
+  
+- 計數方法的問題
+
+  - 在處理大型語料庫時，執行 SVD 需要耗費大量的運算資源和時間
       
 #### 推論方法
 
-- Continuous Bag-Of-Words (CBOW) 模型 (簡化型 word2vec)
+- 以分布假說為基礎，對目標字詞進行推測並獲得字詞的分散式表示
 
-- skip-gram 模型
+- 類神經網路對字詞的處理方式: 字詞 -> 字詞 ID -> one-hot encoding
+
+- 簡化型 word2vec 包含 CBOW 模型與 skip-gram 模型
+
+  - continuous bag-of-words (CBOW) 模型: 從周圍的字詞推測中間字詞的類神經網路
+  
+  - skip-gram 模型: 從中間的字詞推測周圍字詞的類神經網路
+  
+  - CBOW 模型與 skip-gram 模型的比較
+  
+    - 從機率觀點描述 CBOW 模型與 skip-gram 模型
+    
+      - CBOW 模型
+      
+      - skip-gram 模型
+  
+    - 以字詞分散式表示而言，skip-gram 模型通常可獲得良好的結果
+    
+    - 以學習速度而言，CBOW 模型比 skip-gram 模型快
+
+- 計數方法與推論方法的比較
+
+  - 
 
 - word2vec 模型
 
