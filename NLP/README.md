@@ -62,11 +62,11 @@
   
   - CBOW 模型與 skip-gram 模型的比較
   
-    - 從機率觀點描述 CBOW 模型與 skip-gram 模型
+    - 從機率觀點描述 CBOW 模型與 skip-gram 模型 (window size = 1)
     
-      - CBOW 模型
+      - [ ] CBOW 模型: $P(/omega_{t})$
       
-      - skip-gram 模型
+      - [ ] skip-gram 模型
   
     - 以字詞分散式表示而言，skip-gram 模型通常可獲得良好的結果
     
