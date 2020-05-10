@@ -52,7 +52,7 @@
 
 - 以分布假說為基礎，對目標字詞進行推測並獲得字詞的分散式表示
 
-- 類神經網路對字詞的處理方式: 字詞 -> 字詞 ID -> one-hot encoding
+- 類神經網路對字詞的處理方式: **字詞 -> 字詞 ID -> one-hot encoding**
 
 - 簡化型 word2vec 包含 CBOW 模型與 skip-gram 模型
 
@@ -64,7 +64,7 @@
   
     - 從機率觀點描述 CBOW 模型與 skip-gram 模型 (window size = 1)
     
-      - [ ] CBOW 模型: $P(/omega_{t})$
+      - [ ] CBOW 模型: $P(\omega_{t})$
       
       - [ ] skip-gram 模型
   
