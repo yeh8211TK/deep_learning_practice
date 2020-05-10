@@ -64,9 +64,9 @@
   
     - 從機率觀點描述 CBOW 模型與 skip-gram 模型 (window size = 1)
     
-      - [ ] CBOW 模型: <img src="https://render.githubusercontent.com/render/math?math=P(\omega_{t})">
+      - [ ] CBOW 模型: <img src="https://render.githubusercontent.com/render/math?math=P(\omega_{t}|\omega_{t-1}, \omega_{t+1})">
 
-      - [ ] skip-gram 模型
+      - [ ] skip-gram 模型: <img src="https://render.githubusercontent.com/render/math?math=P(\omega_{t-1}, \omega_{t+1}|\omega_{t})">
   
     - 以字詞分散式表示而言，skip-gram 模型通常可獲得良好的結果
     
