@@ -74,7 +74,7 @@
 
 - CBOW 模型
 
-  - 輸入層(one-hot encoding 的 N 個上下文字詞) -> MatMul 層 -> 中間層(通過 MatMul 層的 N 個輸出計算平均值) -> MatMul 層 -> Softmax with loss 層 -> 輸出
+  - **輸入層(one-hot encoding 的 N 個上下文字詞) -> MatMul 層 -> 中間層(通過 MatMul 層的 N 個輸出計算平均值) -> MatMul 層 -> Softmax with loss 層 -> 輸出**
 
   - 權重與分散式表示
   
@@ -112,7 +112,21 @@
   
 - word2vec 模型
 
-  - 簡化型 word2vec 導入新的 Embedding 層和損失函數 Negative Sampling
+  - CBOW 模型的運算瓶頸與解決方式
+  
+    - 輸入層的 one-hot 編碼與計算權重矩陣(<img src="https://render.githubusercontent.com/render/math?math=W_{in}">)的乘積
+    
+      - [ ] 解決方式: 導入 Embedding 層
+    
+    - 中間層與權重矩陣(<img src="https://render.githubusercontent.com/render/math?math=W_{out}">)的乘積與 Softmax 層的運算
+    
+      - [ ] 解決方式: 使用 Negative Sampling 的技術
+  
+  - word2vec 模型的結構
+  
+    - **輸入層(one-hot encoding 的 N 個上下文字詞) -> Embedding 層 -> 中間層(通過 Embedding 層的 N 個輸出計算平均值) -> Embedding Dot 層 -> Sigmoid  with loss 層 -> 輸出**
+    
+  - Embedding 層
   
   - word2vec 的應用
   
@@ -124,7 +138,7 @@
     
     - 字詞分散式表示的優點是可以把字詞轉換成固定長度的向量，這樣該向量就可套入一般的機械學習系統
     
-      - [ ] 字詞分散式表示的系統處理流程: 自然語言 -> 詞向量(word2vec) -> 機械學習系統(類神經網路、SVM...) -> 答案
+      - [ ] 字詞分散式表示的系統處理流程: **自然語言 -> 詞向量(word2vec) -> 機械學習系統(類神經網路、SVM...) -> 答案**
       
       - [ ] 字詞分散式表示與機械學習系統分別使用不同資料(大型通用語料庫、目前面對的問題所收集的資料)進行個別學習; 若所面對的問題有大量的學習資料，可以從零開始進行字詞分散式表示與機械學習系統的學習
       
