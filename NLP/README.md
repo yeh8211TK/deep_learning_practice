@@ -114,20 +114,42 @@
 
   - CBOW 模型的運算瓶頸與解決方式
   
-    - 輸入層的 one-hot 編碼與計算權重矩陣(<img src="https://render.githubusercontent.com/render/math?math=W_{in}">)的乘積
+    - 輸入層的 one-hot 編碼與計算權重矩陣(<img src="https://render.githubusercontent.com/render/math?math=W_{in}">)的乘積以及中間層與權重矩陣(<img src="https://render.githubusercontent.com/render/math?math=W_{out}">)的乘積
     
       - [ ] 解決方式: 導入 Embedding 層
     
-    - 中間層與權重矩陣(<img src="https://render.githubusercontent.com/render/math?math=W_{out}">)的乘積與 Softmax 層的運算
+    - Softmax 層的運算
     
       - [ ] 解決方式: 使用 Negative Sampling 的技術
   
   - word2vec 模型的結構
   
-    - **輸入層(one-hot encoding 的 N 個上下文字詞) -> Embedding 層 -> 中間層(通過 Embedding 層的 N 個輸出計算平均值) -> Embedding Dot 層 -> Sigmoid  with loss 層 -> 輸出**
+    - **輸入層(one-hot encoding 的 N 個上下文字詞) -> Embedding 層 -> 中間層(通過 Embedding 層的 N 個輸出計算平均值) -> Embedding Dot 層 -> Sigmoid with loss 層 -> 輸出**
     
   - Embedding 層
   
+    - 對權重矩陣(<img src="https://render.githubusercontent.com/render/math?math=W_{in}">)取出特定列向量，得到詞嵌入(word embedding)(分散式表示)
+  
+  - Embedding Dot 層
+  
+    - 對權重矩陣(<img src="https://render.githubusercontent.com/render/math?math=W_{out}">)取出特定字詞的行向量，再與中間層的神經元作內積
+  
+  - Sigmoid with loss 層
+  
+    - 將多值分類的問題(根據上下文推測中間的字詞)轉換成二值分類的問題(根據上下文推測中間的字詞是不是某個字詞)
+    
+    - 負值取樣(Negative Sampling)方法
+    
+      - 概念: 用 "部分" 資料取代 "全部" 資料的處理
+    
+      - 作法: 在計算以正例(正確答案)為目標字詞的損失時，同時取樣幾個負例(錯誤答案)計算損失，並將所有資料(正例與取樣的負例)的損失相加作為最終的損失
+  
+      - Negative Sampling 的取樣方式
+      
+        - [ ] 根據語料庫中字詞出現的次數計算機率分布，之後再按照機率分布執行負例取樣
+        
+        - [ ] 字詞的機率須加上一個指數(Ex: 0.75)做轉換，目的是提高低機率字詞出現的機率
+      
   - word2vec 的應用
   
     - word2vec 是遷移學習(transfer learning)的重要關鍵，字詞分散式表示可以運用在各式各樣的自然語言處理上
