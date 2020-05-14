@@ -1,10 +1,6 @@
 本地作為學習深度學習的歷程記錄。
 
-This repository is a place for my deep learning practices.
-
 建置中...
-
-Under construction...
 
 [註] 在 Github 順利查看 .ipynb 檔的方式: 在 https://nbviewer.jupyter.org/ 輸入檔案網址
 
@@ -51,13 +47,11 @@ Under construction...
 
 ### Part 3: 自然語言處理與時間序列分析
 
-- [自然語言處理(natural language processing, NLP)](https://github.com/yeh8211TK/deep_learning_practice/tree/master/NLP): CBOW、word2vec
-
 - 時間序列分析: 遞歸神經網路(RNN、Time RNN)、長短期記憶(LSTM、Time LSTM)模型、GRU(Gated Recurrent Units)模型
 
   -- [deep_learning_RNN&LSTM.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/deep_learning_RNN%26LSTM.ipynb)
 
-- 自然語言處理(natural language processing, NLP): RNNLM、LSTMLM、seq2seq、Attention
+- [自然語言處理(natural language processing, NLP)](https://github.com/yeh8211TK/deep_learning_practice/tree/master/NLP): CBOW、word2vec、RNNLM、LSTMLM、seq2seq、Attention
 
 ### Part 4: 深度學習框架處理時間序列的問題
 - 使用 Keras 執行 RNN、LSTM
