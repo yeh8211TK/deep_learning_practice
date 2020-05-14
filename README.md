@@ -55,7 +55,7 @@ Under construction...
 
 - 時間序列分析: 遞歸神經網路(RNN、Time RNN)、長短期記憶(LSTM、Time LSTM)模型、GRU(Gated Recurrent Units)模型
 
-  -- [deep_learning_RNN&LSTM.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/deep_learning_RNN%26LSTM.ipynb) (To be continued...)
+  -- [deep_learning_RNN&LSTM.ipynb](https://nbviewer.jupyter.org/github/yeh8211TK/deep_learning_practice/blob/master/deep_learning_RNN%26LSTM.ipynb)
 
 - 自然語言處理(natural language processing, NLP): RNNLM、LSTMLM、seq2seq、Attention
 
