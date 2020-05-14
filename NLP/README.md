@@ -218,16 +218,38 @@
   
 - seq2seq 的應用
 
+  - 聊天機器人
+  
+  - 演算法學習
+  
+  - 圖像描述(image captioning)
+
 #### Attention
 
 - seq2seq 的問題
 
+  - 無論多長的文章，Encoder 會將之轉為固定的向量傳給 Decoder
+
 - 執行 seq2seq 的改良
 
   - 改良 Encoder
+    
+    - 取出 Encoder 中所有時刻的隱藏狀態 hs，可獲得與輸入內容長度成正比的資料編碼
   
-  - 改良 Decoder
+  - 改良 Decoder: 建立 Attention 層
   
+    - Attention 層由 Attention Weight 層和 Weight Sum 層所構成
+    
+    - Attention Weight 層的目的是計算能夠代表各個字詞重要程度的權重 a
+    
+      - [ ] 計算 hs 與 h (hs 的最後一列，用來連接 Encoder 與 Decoder)的內積(目的在計算各個詞向量的相似度)，再使用 softmax 函數進行正規化得到 a
+  
+    - Weight Sum 層
+    
+      - [ ] 利用代表各字詞向量的 hs 與代表各個字詞重要程度的權重 a，計算出加權總合，得到上下文向量 c
+      
+      - [ ] 上下文向量 c 包含了轉換當前時刻的必要資料 (從 hs 選出各個時刻的字詞向量與 Decoder 的輸入字詞有著對應關係)
+      
 - Encoder 的雙向 RNN 結構
 
 - 隱藏狀態 h 對 Deconder Attention 層的多層連接
