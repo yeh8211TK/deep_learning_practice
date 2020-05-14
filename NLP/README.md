@@ -185,3 +185,66 @@
   - 計數方法與推論方法的結合: GloVe 方法
   
     - 概念: 將整個語料庫的統計資料放入損失函數中，進行小批次學習  
+
+#### 語言模型
+
+- CBOW 模型近似語言模型
+
+- 語言模型的評估: 困惑度(perplexity)
+
+- RNN 處理語言模型(RNN Language Model, RNNLM)
+
+- LSTM 處理語言模型(LSTM Language Model, LSTMLM)
+
+- LSTMLM 的改良
+
+  - 多層化 LSTM
+  
+  - 以 Dropout 抑制 overfitting
+  
+  - 共享權重(weight tying)
+  
+- LSTMLM 生成文章
+
+#### seq2seq
+
+- Encoder & Decoder
+
+- seq2seq 的改良方法
+
+  - 輸入資料反轉(Reverse)
+  
+  - Peeky Decoder
+  
+- seq2seq 的應用
+
+#### Attention
+
+- seq2seq 的問題
+
+- 執行 seq2seq 的改良
+
+  - 改良 Encoder
+  
+  - 改良 Decoder
+  
+- Encoder 的雙向 RNN 結構
+
+- 隱藏狀態 h 對 Deconder Attention 層的多層連接
+
+- 深層化 seq2seq 與跳躍連接(skip connection)
+
+- Attention 的應用
+
+  - 神經機器翻譯(Neural Machine Translation)
+
+    - Google Neural Machine Translation (GNMT)
+
+  - Transformer
+  
+    - Self-Attention: 以 Attention 取代 RNN/LSTM 層
+
+  - Neural Turing Machine (NTM)
+  
+    - NTM 的改良: Differentiable Neural Computer (DNC)
+
