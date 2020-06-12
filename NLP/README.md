@@ -192,9 +192,11 @@
 
 - 語言模型的評估: 困惑度(perplexity)
 
-- RNN 處理語言模型(RNN Language Model, RNNLM)
+- 以 RNN 處理語言模型(RNN Language Model, RNNLM)
 
-- LSTM 處理語言模型(LSTM Language Model, LSTMLM)
+  - 考量相同字詞但不同語意(Contextualized Word Embedding)的語言模型: Embeddings from Language Model (ELMO)
+    
+- 以 LSTM 處理語言模型(LSTM Language Model, LSTMLM)
 
 - LSTMLM 的改良
 
@@ -268,7 +270,7 @@
   
     - 以 self-attention layer 取代 seq2seq 的 RNN/LSTM layer，進行平行化運算
     
-    - 基於 transformer 的語言模型: Bidirectional Encoder Representations from Transformers (BERT)
+    - 基於 transformer 的語言模型 1: Bidirectional Encoder Representations from Transformers (BERT)
     
       - BERT: Encoder of Transformer
       
@@ -300,6 +302,12 @@
           
         - [ ] 其他: Enhanced Representation through Knowledge Integration (ERNIE)、Multilingual BERT
           
+    - 基於 transformer 的語言模型 2: Generative Pre-Training (GPT)
+    
+      - GPT: Decoder of Transformer
+      
+      - Zero-shot Learning: 閱讀理解(Reading Comprehension)、總結資訊(Summarization)、翻譯(Translation)
+    
   - Neural Turing Machine (NTM)
   
     - NTM 的改良: Differentiable Neural Computer (DNC)
