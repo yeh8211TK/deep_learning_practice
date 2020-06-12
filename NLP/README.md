@@ -230,7 +230,7 @@
 
   - 無論多長的文章，Encoder 會將之轉為固定的向量傳給 Decoder
 
-- 執行 seq2seq 的改良
+- seq2seq 的改良: 加入 Attention 的機制
 
   - 改良 Encoder
     
@@ -249,12 +249,14 @@
       - [ ] 利用代表各字詞向量的 hs 與代表各個字詞重要程度的權重 a，計算出加權總合，得到上下文向量 c
       
       - [ ] 上下文向量 c 包含了轉換當前時刻的必要資料 (從 hs 選出各個時刻的字詞向量與 Decoder 的輸入字詞有著對應關係)
-      
-- Encoder 的雙向 RNN 結構
 
-- 隱藏狀態 h 對 Deconder Attention 層的多層連接
+- Seq2seq with attention 的各種結構變化
 
-- 深層化 seq2seq 與跳躍連接(skip connection)
+  - Encoder 使用雙向 RNN 結構
+
+  - 隱藏狀態 h 對 Decoder Attention 層的多層連接
+
+  - 深層化 seq2seq 與使用跳躍連接(skip connection)
 
 - Attention 的應用
 
@@ -264,8 +266,40 @@
 
   - Transformer
   
-    - Self-Attention: 以 Attention 取代 RNN/LSTM 層
+    - 以 self-attention layer 取代 seq2seq 的 RNN/LSTM layer，進行平行化運算
+    
+    - 基於 transformer 的語言模型: Bidirectional Encoder Representations from Transformers (BERT)
+    
+      - BERT: Encoder of Transformer
+      
+      - 從大量沒有標記的文本進行學習
+      
+      - BERT 的訓練方法
+      
+        - [ ] Masked LM
+        
+        - [ ] Next Sentence Prediction
+      
+      - BERT 的應用: 利用已訓練好的 BERT 模型執行遷移學習(transfer learning)，例如 BERT (fine-tune) + linear classifier (從頭訓練參數)
+      
+        - [ ] 案例 1: 語意分析(Sentiment analysis)、文件分類(Document Classification)
+        
+          - 輸入: 單一句子，輸出: 句子種類
+          
+        - [ ] 案例 2: 填槽(Slot filling)
+        
+          - 輸入: 單一句子，輸出: 每個文字的種類
+          
+        - [ ] 案例 3: 自然語言推論(Natural Language Inference)
+        
+          - 輸入: 兩個句子，輸出: 種類
 
+        - [ ] 案例 4: Extraction-based Question Answering (QA)
+        
+          - 輸入: Document、Query，輸出: 兩個整數 (𝑠, 𝑒) 
+          
+        - [ ] 其他: Enhanced Representation through Knowledge Integration (ERNIE)、Multilingual BERT
+          
   - Neural Turing Machine (NTM)
   
     - NTM 的改良: Differentiable Neural Computer (DNC)
